@@ -1,0 +1,118 @@
+$main-color: #50473c;
+body {
+    font-family: Open Sans;
+    background-color: #eee;
+    padding: 0;
+    margin: 0;
+    color: $main-color;
+}
+
+.container {
+    max-width: 1440px !important;
+    padding: 0 !important;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-column-reverse {
+    flex-direction: column-reverse;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-right,
+.flex-end {
+    justify-content: flex-end;
+}
+
+.flex-center {
+    justify-content: center;
+}
+
+.flex-left,
+.flex-start {
+    justify-content: flex-start;
+}
+
+.flex-between {
+    justify-content: space-between;
+}
+
+.flex-around {
+    justify-content: space-around;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.upper-case {
+    text-transform: uppercase;
+}
+
+.lower-case {
+    text-transform: lowercase;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-15 {
+    font-size: 15px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-17 {
+    font-size: 17px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.el-dialog__close {
+    color: black !important;
+    font-weight: bold !important;
+    font-size: 20px;
+}
+
+.el-dialog__header,
+.el-dialog__body {
+    padding: 0 !important;
+}
