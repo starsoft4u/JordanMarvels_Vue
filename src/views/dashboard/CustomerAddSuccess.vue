@@ -13,8 +13,8 @@
             <span>added successfully</span>
           </div>
           <div class="button center mt-5 pb-5">
-            <button>
-              <span>View all Countries</span>
+            <button @click="goCustomerAll">
+              <span>View all Customers</span>
               <img src="../../assets/images/ic-user.svg" />
             </button>
           </div>
@@ -30,28 +30,17 @@ export default {
   },
   data() {
     return {
-      name: "",
-      email: "",
-      mobile_number: "",
-      country: "",
-      address: "",
-      password: "",
-      confirm_password: ""
     };
   },
   methods: {
-    add_customer() {
-      if (!this.name) {
-        this.$alert("Please Enter name");
-        return;
-      }
+    goCustomerAll() {
+      this.$router.replace({name:'CustomerAll'})
     }
   }
 };
 </script>
 <style lang="scss" scoped>
-.right-container {
-  flex: 1;
+
 
   .main-container {
     background-color: #f2f2f2;
@@ -101,5 +90,4 @@ export default {
       }
     }
   }
-}
 </style>

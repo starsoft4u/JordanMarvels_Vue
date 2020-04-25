@@ -102,6 +102,48 @@ const routes = [{
                 name: 'CategoryAddSuccess',
                 component: () =>
                     import ('@/views/dashboard/CategoryAddSuccess.vue')
+            },
+            {
+                path: 'discount/all',
+                name: 'DiscountAll',
+                component: () =>
+                    import ('@/views/dashboard/DiscountAll.vue')
+            },
+            {
+                path: 'discount/add',
+                name: 'DiscountAdd',
+                component: () =>
+                    import ('@/views/dashboard/DiscountAdd.vue')
+            },
+            {
+                path: 'discount/add/success',
+                name: 'DiscountAddSuccess',
+                component: () =>
+                    import ('@/views/dashboard/DiscountAddSuccess.vue')
+            },
+            {
+                path: 'package/inquiry',
+                name: 'PackageInquiry',
+                component: () =>
+                    import ('@/views/dashboard/PackageInquiry.vue')
+            },
+            {
+                path: 'booking/tour/all',
+                name: 'BookingTourAll',
+                component: () =>
+                    import ('@/views/dashboard/BookingTourAll.vue')
+            },
+            {
+                path: 'booking/car/all',
+                name: 'BookingCarAll',
+                component: () =>
+                    import ('@/views/dashboard/BookingCarAll.vue')
+            },
+            {
+                path: 'car/all',
+                name: 'CarAll',
+                component: () =>
+                    import ('@/views/dashboard/CarAll.vue')
             }
 
         ]

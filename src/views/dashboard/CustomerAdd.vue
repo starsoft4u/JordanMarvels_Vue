@@ -1,53 +1,50 @@
 <template>
-
-      <div class="main-container">
-        <div class="content-box">
-          <div class="title pt-4">Add New customer</div>
-          <div class="detail mt-3">Please add the details as per the given form</div>
-          <div class="label mt-4">Full Name</div>
-          <div class="mt-2">
-            <input type="text" v-model="name" placeholder="Enter Full Name" />
-          </div>
-          <div class="label mt-4">Email Address</div>
-          <div class="mt-2">
-            <input type="text" v-model="email" placeholder="Enter Email Address" />
-          </div>
-          <div class="label mt-4">Mobile Number</div>
-          <div class="mt-2">
-            <input type="text" v-model="mobile_number" placeholder="Enter MobileNumber" />
-          </div>
-          <div class="label mt-4">Country</div>
-          <div class="mt-2">
-            <select placeholder="Select from list" v-model="country"></select>
-          </div>
-          <div class="label mt-4">Complete Address</div>
-          <div class="mt-2">
-            <textarea v-model="address" placeholder="Your Complete Address" rows="5"></textarea>
-          </div>
-          <div class="label mt-4">Password</div>
-          <div class="mt-2">
-            <input type="password" v-model="password" placeholder="Enter Password" />
-          </div>
-          <div class="label mt-4">Confirm Password</div>
-          <div class="mt-2">
-            <input type="password" v-model="confirm_password" placeholder="Enter Confirm Password" />
-          </div>
-          <div class="center mt-5">
-            <button @click="add_customer">Add Customer Now</button>
-          </div>
-          <div class="center mt-4">
-            <a>Cancel</a>
-          </div>
-        </div>
+  <div class="main-container">
+    <div class="content-box">
+      <div class="title pt-4">Add New customer</div>
+      <div class="detail mt-3">Please add the details as per the given form</div>
+      <div class="label mt-4">Full Name</div>
+      <div class="mt-2">
+        <input type="text" v-model="name" placeholder="Enter Full Name" />
       </div>
+      <div class="label mt-4">Email Address</div>
+      <div class="mt-2">
+        <input type="text" v-model="email" placeholder="Enter Email Address" />
+      </div>
+      <div class="label mt-4">Mobile Number</div>
+      <div class="mt-2">
+        <input type="text" v-model="mobile_number" placeholder="Enter MobileNumber" />
+      </div>
+      <div class="label mt-4">Country</div>
+      <div class="mt-2">
+        <select placeholder="Select from list" v-model="country"></select>
+      </div>
+      <div class="label mt-4">Complete Address</div>
+      <div class="mt-2">
+        <textarea v-model="address" placeholder="Your Complete Address" rows="5"></textarea>
+      </div>
+      <div class="label mt-4">Password</div>
+      <div class="mt-2">
+        <input type="password" v-model="password" placeholder="Enter Password" />
+      </div>
+      <div class="label mt-4">Confirm Password</div>
+      <div class="mt-2">
+        <input type="password" v-model="confirm_password" placeholder="Enter Confirm Password" />
+      </div>
+      <div class="center mt-5">
+        <button @click="add_customer">Add Customer Now</button>
+      </div>
+      <div class="center mt-4">
+        <a>Cancel</a>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
-
 export default {
   name: "CustomerAddSuccess",
-  components: {
-  },
+  components: {},
   data() {
     return {
       name: "Johan Mark",
@@ -71,8 +68,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.right-container {
-  flex: 1;
+
 
   .main-container {
     background-color: #f2f2f2;
@@ -80,7 +76,7 @@ export default {
     padding: 43px 88px 27px 106px;
     .content-box {
       background-color: white;
-      padding: 0 107px;
+      padding: 32px 107px;
       .title {
         font-family: Open Sans;
         font-style: normal;
@@ -171,6 +167,5 @@ export default {
         color: #50473c;
       }
     }
-  }
 }
 </style>

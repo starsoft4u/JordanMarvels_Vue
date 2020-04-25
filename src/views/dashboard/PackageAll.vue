@@ -166,67 +166,63 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.right-container {
+.main-container {
+  background-color: #f2f2f2;
   flex: 1;
+  padding: 43px 88px 45px 106px;
+  .content-box {
+    background-color: white;
+    .title {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 27px;
+      text-align: center;
+      text-transform: uppercase;
 
-  .main-container {
-    background-color: #f2f2f2;
-    flex: 1;
-    padding: 43px 88px 45px 106px;
-    .content-box {
-      background-color: white;
-      .title {
-        font-family: Open Sans;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 27px;
-        text-align: center;
-        text-transform: uppercase;
+      color: #50473c;
+    }
+    .detail {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 25px;
+      /* identical to box height */
 
-        color: #50473c;
+      text-align: center;
+
+      color: #50473c;
+    }
+    .el-table {
+      button {
+        border: none;
+        border-radius: 50%;
       }
-      .detail {
-        font-family: Open Sans;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 25px;
-        /* identical to box height */
+    }
+    .more-button {
+      width: 315px;
+      height: 44px;
+      background: #ffc11f;
+      border-radius: 5px;
+      padding: 12px auto;
+      margin: 36px auto;
 
-        text-align: center;
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 20px;
+      text-align: center;
+      letter-spacing: 0.46875px;
+      text-transform: uppercase;
 
-        color: #50473c;
-      }
-      .el-table {
-        button {
-          border: none;
-          border-radius: 50%;
-        }
-      }
-      .more-button {
-        width: 315px;
-        height: 44px;
-        background: #ffc11f;
-        border-radius: 5px;
-        padding: 12px auto;
-        margin: 36px auto;
-
-        font-family: Open Sans;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 15px;
-        line-height: 20px;
-        text-align: center;
-        letter-spacing: 0.46875px;
-        text-transform: uppercase;
-
-        color: #50473c;
-      }
-      .more-button:hover,
-      .more-button:active {
-        border: 1px solid grey;
-      }
+      color: #50473c;
+    }
+    .more-button:hover,
+    .more-button:active {
+      border: 1px solid grey;
     }
   }
 }

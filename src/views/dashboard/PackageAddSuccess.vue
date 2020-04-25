@@ -37,8 +37,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.right-container {
-  flex: 1;
+
 
   .main-container {
     background-color: #f2f2f2;
@@ -88,5 +87,4 @@ export default {
       }
     }
   }
-}
 </style>

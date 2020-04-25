@@ -1,19 +1,20 @@
 <template>
-  <div class="main-container">
+  <div class="discount-add-success main-container">
     <div class="content-box">
       <div class="icon center">
         <img src="../../assets/images/ic_success.svg" />
       </div>
       <div class="msg center mt-3">
         <span>
-          A new package category
-          <b>The Honeymoon Delight</b> has been
+          A new discount
+          <b>The Discount Plus</b>
+          has been
           <br />added successfully
         </span>
       </div>
       <div class="button center mt-5 pb-5">
-        <button @click="goCategoryAll">
-          <span>View All packages categories</span>
+        <button @click="goDiscountAll">
+          <span>View All Discounts</span>
           <img src="../../assets/images/ic-user.svg" />
         </button>
       </div>
@@ -23,22 +24,11 @@
 
 <script>
 export default {
-  name: "CustomerAddSuccess",
+  name: "DiscountAddSuccess",
   components: {},
-  data() {
-    return {
-      name: "",
-      email: "",
-      mobile_number: "",
-      country: "",
-      address: "",
-      password: "",
-      confirm_password: ""
-    };
-  },
   methods: {
-    goCategoryAll() {
-        this.$router.replace({name:'CategoryAll'})
+    goDiscountAll() {
+      this.$router.replace({ name: "DiscountAll" });
     }
   }
 };
@@ -69,7 +59,7 @@ export default {
     }
 
     button {
-      min-width: 190px;
+      width: 190px;
       height: 44px;
       background-color: #ffffff;
       border: 1px solid #c7b299;

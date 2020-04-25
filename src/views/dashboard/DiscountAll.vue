@@ -1,20 +1,21 @@
 <template>
-  <div class="category-all main-container">
+  <div class="discount-all main-container">
     <div class="content-box">
-      <div class="title pt-4">All Package Categories</div>
-      <div class="detail mt-3">you can add new Package Category here.</div>
+      <div class="title pt-4">All Discounts</div>
+      <div class="detail mt-3">you can add new Discount here.</div>
       <el-table :data="tableData" class="mt-3">
-        <el-table-column prop="category_no" label="Categories No." width="100"></el-table-column>
-        <el-table-column prop="category_name" label="Package Categories Name" width="230"></el-table-column>
-        <el-table-column prop="category_date" label="Date" width="180"></el-table-column>
-        <el-table-column label="Edit">
+        <el-table-column prop="discount_name" label="Discount Name"></el-table-column>
+        <el-table-column prop="discount_type" label="Discount Type"></el-table-column>
+        <el-table-column prop="discount_amount" label="Discount Amount %"></el-table-column>
+        <el-table-column prop="discount_category" label="Discount Category"></el-table-column>
+        <el-table-column label="Edit" width="100">
           <template>
-            <el-button size="small" @click="show_category_edit_dialog">
+            <el-button size="small" @click="show_discount_edit_dialog">
               <img src="../../assets/images/ic-edit-black.svg" />
             </el-button>
           </template>
         </el-table-column>
-        <el-table-column label="Delete">
+        <el-table-column label="Delete" width="100">
           <template>
             <el-button size="small">
               <img src="../../assets/images/ic-user-delete.svg" />
@@ -29,32 +30,57 @@
     </div>
 
     <el-dialog
-      :visible.sync="category_edit_dialog_visible"
+      :visible.sync="discount_edit_dialog_visible"
       width="838px"
       center
-      class="category_edit_dialog"
+      class="discount_edit_dialog"
     >
       <span slot="title">
-        <span class="dialog-title p-3">Edit Package Categories</span>
+        <span class="dialog-title p-3">Edit Discount</span>
       </span>
       <div class="dialog-body">
-        <div class="dialog-description">you can Edit Package Category here.</div>
-        <div class="mt-2 label">Enter Package Category</div>
+        <div class="dialog-description">you can Edit Discount here.</div>
+
+        <div class="mt-2 label">Discount Name</div>
         <div class="mt-2">
           <input
             type="text"
             class="value"
-            placeholder="The Family and Freiends "
-            v-model="sel_category_name"
+            placeholder="Enter Discount Name"
+            v-model="sel_discount_name"
           />
+        </div>
+        <div class="mt-2 label">Discount Type</div>
+        <div class="mt-2">
+          <input
+            type="text"
+            class="value"
+            placeholder="Enter Discount Type"
+            v-model="sel_discount_type"
+          />
+        </div>
+        <div class="mt-2 label">Discount Amount</div>
+        <div class="mt-2">
+          <input
+            type="text"
+            class="value"
+            placeholder="Enter Discount Amount"
+            v-model="sel_discount_amount"
+          />
+        </div>
+        <div class="mt-2 label">Discount Category</div>
+        <div class="mt-2">
+          <select type="text" class="value" v-model="sel_discount_category">
+            <option>Please select discount category</option>
+          </select>
         </div>
       </div>
       <span slot="footer">
         <div class="dialog-footer">
-          <el-button @click="saveCategory">
-            <span>EDIt package Category</span>
+          <el-button @click="saveDiscount">
+            <span>Edit Discount Now</span>
           </el-button>
-          <el-button @click="category_edit_dialog_visible = false">
+          <el-button @click="discount_edit_dialog_visible = false">
             <span>Cancel</span>
           </el-button>
         </div>
@@ -62,10 +88,10 @@
     </el-dialog>
 
     <el-dialog
-      :visible.sync="category_edit_success_dialog_visible"
+      :visible.sync="discount_edit_success_dialog_visible"
       width="838px"
       center
-      class="category_edit_success_dialog"
+      class="discount_edit_success_dialog"
     >
       <span slot="title"></span>
       <div class="dialog-body">
@@ -73,15 +99,15 @@
           <img src="../../assets/images/ic_success.svg" />
         </div>
         <div class="dialog-description">
-          The package category
-          <b>The Family and Freiends</b>
+          The Discount
+          <b>Honmoon Freiends</b>
           <br />has been edit successfully
         </div>
       </div>
       <span slot="footer">
         <div class="dialog-footer">
-          <el-button @click="goCategoryAll">
-            <span>View All packages categories</span>
+          <el-button @click="goDiscountAll">
+            <span>View All Discounts</span>
           </el-button>
         </div>
       </span>
@@ -94,50 +120,69 @@ export default {
   components: {},
   data() {
     return {
-      category_edit_dialog_visible: false,
-      category_edit_success_dialog_visible: false,
-      sel_category_name: "",
+      discount_edit_dialog_visible: false,
+      discount_edit_success_dialog_visible: false,
+      sel_discount_name: "",
+      sel_discount_type: "",
+      sel_discount_amount: "",
+      sel_discount_category: "",
       tableData: [
         {
-          category_no: 1,
-          category_name: "Package Category 1",
-          category_date: "12-02-2020"
+          discount_name: "FamilyONE",
+          discount_type: "Frinds and family",
+          discount_amount: "13%",
+          discount_category: "Discount Category 1"
         },
         {
-          category_no: 2,
-          category_name: "Package Category 2",
-          category_date: "12-02-2020"
+          discount_name: "FamilyONE",
+          discount_type: "Frinds and family",
+          discount_amount: "13%",
+          discount_category: "Discount Category 1"
         },
         {
-          category_no: 3,
-          category_name: "Package Category 3",
-          category_date: "12-02-2020"
+          discount_name: "FamilyONE",
+          discount_type: "Frinds and family",
+          discount_amount: "13%",
+          discount_category: "Discount Category 1"
         },
         {
-          category_no: 4,
-          category_name: "Package Category 4",
-          category_date: "12-02-2020"
+          discount_name: "FamilyONE",
+          discount_type: "Frinds and family",
+          discount_amount: "13%",
+          discount_category: "Discount Category 1"
         },
         {
-          category_no: 5,
-          category_name: "Package Category 5",
-          category_date: "12-02-2020"
+          discount_name: "FamilyONE",
+          discount_type: "Frinds and family",
+          discount_amount: "13%",
+          discount_category: "Discount Category 1"
+        },
+        {
+          discount_name: "FamilyONE",
+          discount_type: "Frinds and family",
+          discount_amount: "13%",
+          discount_category: "Discount Category 1"
+        },
+        {
+          discount_name: "FamilyONE",
+          discount_type: "Frinds and family",
+          discount_amount: "13%",
+          discount_category: "Discount Category 1"
         }
       ]
     };
   },
   methods: {
-    show_category_edit_dialog() {
-      this.sel_category_name = this.tableData[0].category_name;
-      this.category_edit_dialog_visible = true;
+    show_discount_edit_dialog() {
+      this.sel_discount_name = this.tableData[0].discount_name;
+      this.discount_edit_dialog_visible = true;
     },
-    saveCategory() {
-      this.category_edit_dialog_visible = false;
-      this.category_edit_success_dialog_visible = true;
+    saveDiscount() {
+      this.discount_edit_dialog_visible = false;
+      this.discount_edit_success_dialog_visible = true;
     },
-    goCategoryAll(){
-      this.category_edit_success_dialog_visible=false;
-      // this.$router.replace({name:'CategoryAll'});
+    goDiscountAll() {
+      this.discount_edit_success_dialog_visible = false;
     }
   }
 };
@@ -203,7 +248,7 @@ export default {
     }
   }
 
-  .category_edit_dialog {
+  .discount_edit_dialog {
     .dialog-title {
       font-family: Open Sans;
       font-style: normal;
@@ -279,9 +324,9 @@ export default {
       }
     }
   }
-  .category_edit_success_dialog {
+  .discount_edit_success_dialog {
     .dialog-body {
-      padding:50px 32px 16px 32px;
+      padding: 50px 32px 16px 32px;
       .dialog-description {
         font-family: Open Sans;
         font-style: normal;

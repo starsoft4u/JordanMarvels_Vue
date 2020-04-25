@@ -36,7 +36,7 @@
           <el-menu-item index="/dashboard/package/all">View all Packages</el-menu-item>
           <el-menu-item index="/dashboard/package/add">Add new Packages</el-menu-item>
           <el-menu-item index="/dashboard/category/all">Packages Categories</el-menu-item>
-          <el-menu-item index="/dashboard/category/add">ADd Packages Category</el-menu-item>
+          <el-menu-item index="/dashboard/category/add">Add Packages Category</el-menu-item>
         </el-submenu>
         <el-menu-item index="/dashboard/package/inquiry" class="mi-1">
           <img src="../assets/images/MenuIcon-package inquary.png" />
@@ -48,16 +48,16 @@
             <span>Discounts</span>
           </template>
           <el-menu-item index="/dashboard/discount/add">Add New Discount</el-menu-item>
-          <el-menu-item index="4-2">View All Discounts</el-menu-item>
+          <el-menu-item index="/dashboard/discount/all">View All Discounts</el-menu-item>
         </el-submenu>
         <el-submenu index="5">
           <template slot="title">
             <img src="../assets/images/MenuIcon-booking.png" />
             <span>Bookings</span>
           </template>
-          <el-menu-item index="5-1">Tour bookings</el-menu-item>
-          <el-menu-item index="5-2">Car bookings</el-menu-item>
-          <el-menu-item index="5-4">View all Cars</el-menu-item>
+          <el-menu-item index="/dashboard/booking/tour/all">Tour bookings</el-menu-item>
+          <el-menu-item index="/dashboard/booking/car/all">Car bookings</el-menu-item>
+          <el-menu-item index="/dashboard/car/all">View all Cars</el-menu-item>
         </el-submenu>
       </el-menu>
     </div>
