@@ -6,7 +6,7 @@
       </div>
 
       <el-menu
-        :default-active="$route.path"
+        :default-active="$route.path.replace('/success','')"
         class="el-menu-vertical-demo"
         @open="handleOpen"
         @close="handleClose"

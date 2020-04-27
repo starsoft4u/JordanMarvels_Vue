@@ -93,7 +93,7 @@
       center
       id="add_new_user_success_dialog"
     >
-      <div class="flex-container flex-center mt-3">
+      <div class="flex-container flex-center pt-5">
         <img src="../assets/images/ic_success.svg" width="40" height="40" />
       </div>
       <div class="dialog-content">
