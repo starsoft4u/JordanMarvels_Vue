@@ -158,7 +158,7 @@ const router = new VueRouter({
 router.beforeEach((to, from, next) => {
     console.log("beforeEach", to);
     if (to.path.indexOf('/dashboard') != -1) {
-        if (!localStorage.logged) {
+        if (!localStorage.jm_admin_logged) {
             next({ path: '/login' });
         }
     }

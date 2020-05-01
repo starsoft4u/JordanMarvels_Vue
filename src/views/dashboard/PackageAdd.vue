@@ -77,7 +77,7 @@
             @change="changePhotos"
           />
           <div>
-            <img src="../../assets/images/ic-drop.svg" />
+            <img src="../../assets/images/ic_drag_drop.svg" />
           </div>
           <div>Drag & Drop Files</div>
         </div>
@@ -96,7 +96,7 @@
         <div v-for="(photo,index) in photos" :key="index" class="pp flex-container">
           <img :src="photo" class="photo-image" />
           <img
-            src="../../assets/images/ic-close-wb.svg"
+            src="../../assets/images/ic_close_white.svg"
             class="close-icon"
             @click="removePhoto(index)"
           />

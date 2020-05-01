@@ -15,7 +15,7 @@
           <div class="button center mt-5 pb-5">
             <button @click="goCustomerAll">
               <span>View all Customers</span>
-              <img src="../../assets/images/ic-user.svg" />
+              <img src="../../assets/images/ic_user.svg" />
             </button>
           </div>
         </div>

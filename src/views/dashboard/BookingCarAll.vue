@@ -49,7 +49,7 @@ export default {
     return {
       tableData: [
         {
-          img_name: "car-bmw.png",
+          img_name: "car_bmw.png",
           car_name: "BMW",
           from: "12-02-2020",
           to: "12-02-2020",
@@ -61,7 +61,7 @@ export default {
           type: "success"
         },
         {
-          img_name: "car-hyundai.png",
+          img_name: "car_hyundai.png",
           car_name: "Hyundai Elantra",
           from: "12-02-2020",
           to: "12-02-2020",
@@ -73,7 +73,7 @@ export default {
           type: "warning"
         },
         {
-          img_name: "car-toyoda.png",
+          img_name: "car_toyoda.png",
           car_name: "Toyota Prius",
           from: "12-02-2020",
           to: "12-02-2020",
@@ -85,7 +85,7 @@ export default {
           type: "danger"
         },
         {
-          img_name: "car-bmw.png",
+          img_name: "car_bmw.png",
           car_name: "BMW",
           from: "12-02-2020",
           to: "12-02-2020",
@@ -97,7 +97,7 @@ export default {
           type: "success"
         },
         {
-          img_name: "car-hyundai.png",
+          img_name: "car_hyundai.png",
           car_name: "Hyundai Elantra",
           from: "12-02-2020",
           to: "12-02-2020",
@@ -109,7 +109,7 @@ export default {
           type: "warning"
         },
         {
-          img_name: "car-toyoda.png",
+          img_name: "car_toyoda.png",
           car_name: "Toyota Prius",
           from: "12-02-2020",
           to: "12-02-2020",

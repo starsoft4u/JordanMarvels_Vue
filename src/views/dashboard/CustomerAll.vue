@@ -20,10 +20,10 @@
           <div style="flex:140">12-02-2020</div>
           <div class="center" style="flex:140">06</div>
           <div class="center" style="flex:140;cursor:pointer;" @click="show_dialog">
-            <img src="../../assets/images/ic-eye.svg" />
+            <img src="../../assets/images/ic_eye.svg" />
           </div>
           <div class="center" style="flex:100">
-            <img src="../../assets/images/ic-user-delete.svg" />
+            <img src="../../assets/images/ic_user_delete.svg" />
           </div>
         </div>
 
@@ -64,11 +64,11 @@
           <div class="center mt-5">
             <el-button>
               <span>Edit User</span>
-              <img src="../../assets/images/ic-user-edit.svg" />
+              <img src="../../assets/images/ic_user_edit.svg" />
             </el-button>
             <el-button @click="dialog_visible = false">
               <span>Delect USer</span>
-              <img src="../../assets/images/ic-user-delete-b.svg" />
+              <img src="../../assets/images/ic_user_delete_b.svg" />
             </el-button>
           </div>
         </div>

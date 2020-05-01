@@ -2,7 +2,7 @@
   <div class="menu-container flex-container flex-column flex-between">
     <div>
       <div class="logo">
-        <img src="../assets/images/logo2.png" />
+        <img src="../assets/images/logo2.svg" />
       </div>
 
       <el-menu
@@ -17,12 +17,12 @@
         active-text-color="#cde"
       >
         <el-menu-item index="/dashboard/home" class="mi-1">
-          <img src="../assets/images/MenuIcon-Home.png" />
+          <img src="../assets/images/ic_menu_home.svg" />
           <span>Home</span>
         </el-menu-item>
         <el-submenu index="1">
           <template slot="title">
-            <img src="../assets/images/MenuIcon-customer.png" />
+            <img src="../assets/images/ic_menu_customer.svg" />
             Customers
           </template>
           <el-menu-item index="/dashboard/customer/add">Add new customers</el-menu-item>
@@ -30,7 +30,7 @@
         </el-submenu>
         <el-submenu index="2">
           <template slot="title">
-            <img src="../assets/images/MenuIcon-tourpackages.png" />
+            <img src="../assets/images/ic_menu_tour_packages.svg" />
             <span>Tour Packages</span>
           </template>
           <el-menu-item index="/dashboard/package/all">View all Packages</el-menu-item>
@@ -39,12 +39,12 @@
           <el-menu-item index="/dashboard/category/add">Add Packages Category</el-menu-item>
         </el-submenu>
         <el-menu-item index="/dashboard/package/inquiry" class="mi-1">
-          <img src="../assets/images/MenuIcon-package inquary.png" />
+          <img src="../assets/images/ic_menu_package_inquiry.svg" />
           <span>Packages inquiry</span>
         </el-menu-item>
         <el-submenu index="4">
           <template slot="title">
-            <img src="../assets/images/MenuIcon-discount.png" />
+            <img src="../assets/images/ic_menu_discount.svg" />
             <span>Discounts</span>
           </template>
           <el-menu-item index="/dashboard/discount/add">Add New Discount</el-menu-item>
@@ -52,17 +52,35 @@
         </el-submenu>
         <el-submenu index="5">
           <template slot="title">
-            <img src="../assets/images/MenuIcon-booking.png" />
+            <img src="../assets/images/ic_menu_booking.svg" />
             <span>Bookings</span>
           </template>
           <el-menu-item index="/dashboard/booking/tour/all">Tour bookings</el-menu-item>
           <el-menu-item index="/dashboard/booking/car/all">Car bookings</el-menu-item>
           <el-menu-item index="/dashboard/car/all">View all Cars</el-menu-item>
         </el-submenu>
+        <el-submenu index="6">
+          <template slot="title">Menu 6</template>
+          <el-menu-item index="6-1">Tour bookings</el-menu-item>
+          <el-menu-item index="6-2">Car bookings</el-menu-item>
+          <el-menu-item index="6-3">View all Cars</el-menu-item>
+          <el-submenu index="7">
+            <template slot="title">Menu 7</template>
+            <el-menu-item index="7-1">Tour bookings</el-menu-item>
+            <el-menu-item index="7-2">Car bookings</el-menu-item>
+            <el-menu-item index="7-3">View all Cars</el-menu-item>
+            <el-submenu index="8">
+              <template slot="title">Menu 8</template>
+              <el-menu-item index="8-1">Tour bookings</el-menu-item>
+              <el-menu-item index="8-2">Car bookings</el-menu-item>
+              <el-menu-item index="8-3">View all Cars</el-menu-item>
+            </el-submenu>
+          </el-submenu>
+        </el-submenu>
       </el-menu>
     </div>
     <div class="copyright form-inline">
-      <img src="../assets/images/copyright2.svg" />
+      <img src="../assets/images/ic_copyright2.svg" />
       <span>Copyright 2020. All Rights Reserved</span>
     </div>
   </div>

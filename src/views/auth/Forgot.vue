@@ -4,7 +4,7 @@
       <div class="left-container flex-container flex-column flex-between">
         <div>
           <div class="logo-box">
-            <img src="../../assets/images/logo.png" />
+            <img src="../../assets/images/logo.svg" />
           </div>
           <div class="title-box upper-case">
             <span>Password Reset</span>
@@ -24,7 +24,7 @@
           <button class="w-100 mt-5 upper-case" @click="send()">Reset Password</button>
         </div>
         <div class="mt-3 mb-4 flex-container form-inline">
-          <img src="../../assets/images/copyright.svg" />
+          <img src="../../assets/images/ic_copyright_black.svg" />
           <span>Copyright 2020. All Rights Reserved</span>
         </div>
       </div>

@@ -10,14 +10,14 @@
         <el-table-column label="Edit">
           <template>
             <el-button size="small" @click="show_category_edit_dialog">
-              <img src="../../assets/images/ic-edit-black.svg" />
+              <img src="../../assets/images/ic_edit_black.svg" />
             </el-button>
           </template>
         </el-table-column>
         <el-table-column label="Delete">
           <template>
             <el-button size="small">
-              <img src="../../assets/images/ic-user-delete.svg" />
+              <img src="../../assets/images/ic_user_delete.svg" />
             </el-button>
           </template>
         </el-table-column>

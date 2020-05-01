@@ -15,7 +15,7 @@
               <div>
                 <button>
                   <span>Veiew details</span>&nbsp;
-                  <img src="../../assets/images/ic-arrow-right.svg" />
+                  <img src="../../assets/images/ic_arrow_right.svg" />
                 </button>
               </div>
             </div>
@@ -33,7 +33,7 @@
               <div>
                 <button>
                   <span>Veiew details</span>&nbsp;
-                  <img src="../../assets/images/ic-arrow-right.svg" />
+                  <img src="../../assets/images/ic_arrow_right.svg" />
                 </button>
               </div>
             </div>
@@ -51,7 +51,7 @@
               <div>
                 <button>
                   <span>Veiew details</span>&nbsp;
-                  <img src="../../assets/images/ic-arrow-right.svg" />
+                  <img src="../../assets/images/ic_arrow_right.svg" />
                 </button>
               </div>
             </div>
@@ -71,7 +71,7 @@
               <div>
                 <button>
                   <span>Veiew details</span>&nbsp;
-                  <img src="../../assets/images/ic-arrow-right.svg" />
+                  <img src="../../assets/images/ic_arrow_right.svg" />
                 </button>
               </div>
             </div>
@@ -89,7 +89,7 @@
               <div>
                 <button>
                   <span>Veiew details</span>&nbsp;
-                  <img src="../../assets/images/ic-arrow-right.svg" />
+                  <img src="../../assets/images/ic_arrow_right.svg" />
                 </button>
               </div>
             </div>
@@ -107,7 +107,7 @@
               <div>
                 <button>
                   <span>Veiew details</span>&nbsp;
-                  <img src="../../assets/images/ic-arrow-right.svg" />
+                  <img src="../../assets/images/ic_arrow_right.svg" />
                 </button>
               </div>
             </div>

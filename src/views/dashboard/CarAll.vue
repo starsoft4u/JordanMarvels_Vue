@@ -1,5 +1,5 @@
 <template>
-  <div class="car-all main-container">
+  <div class="car_all main-container">
     <div class="content-box">
       <div class="title pt-4">View All CARs</div>
       <el-table :data="tableData" class="mt-3">
@@ -18,7 +18,7 @@
         <el-table-column prop="conditioner" label="Conditioner" align="center"></el-table-column>
         <el-table-column label="Edit" align="center">
           <template slot-scope="scope">
-            <img src="../../assets/images/ic-edit-black.svg" @click="showEditDialog(scope.row)" />
+            <img src="../../assets/images/ic_edit_black.svg" @click="showEditDialog(scope.row)" />
           </template>
         </el-table-column>
       </el-table>
@@ -47,7 +47,7 @@ export default {
       },
       tableData: [
         {
-          img_name: "car-bmw.png",
+          img_name: "car_bmw.png",
           car_name: "BMW",
           day_price: "$118",
           transmission: "Manual",
@@ -57,7 +57,7 @@ export default {
           conditioner: "Yes"
         },
         {
-          img_name: "car-hyundai.png",
+          img_name: "car_hyundai.png",
           car_name: "Hyundai Elantra",
           day_price: "$118",
           transmission: "Automatic",
@@ -67,7 +67,7 @@ export default {
           conditioner: "No"
         },
         {
-          img_name: "car-toyoda.png",
+          img_name: "car_toyoda.png",
           car_name: "Toyota Prius",
           day_price: "$118",
           transmission: "Manual",
@@ -77,7 +77,7 @@ export default {
           conditioner: "Yes"
         },
         {
-          img_name: "car-bmw.png",
+          img_name: "car_bmw.png",
           car_name: "BMW",
           day_price: "$118",
           transmission: "Manual",
@@ -87,7 +87,7 @@ export default {
           conditioner: "Yes"
         },
         {
-          img_name: "car-hyundai.png",
+          img_name: "car_hyundai.png",
           car_name: "Hyundai Elantra",
           day_price: "$118",
           transmission: "Automatic",
@@ -97,7 +97,7 @@ export default {
           conditioner: "No"
         },
         {
-          img_name: "car-toyoda.png",
+          img_name: "car_toyoda.png",
           car_name: "Toyota Prius",
           day_price: "$118",
           transmission: "Manual",
@@ -107,7 +107,7 @@ export default {
           conditioner: "Yes"
         },
         {
-          img_name: "car-bmw.png",
+          img_name: "car_bmw.png",
           car_name: "BMW",
           day_price: "$118",
           transmission: "Automatic",
@@ -117,7 +117,7 @@ export default {
           conditioner: "No"
         },
         {
-          img_name: "car-hyundai.png",
+          img_name: "car_hyundai.png",
           car_name: "Hyundai Elantra",
           day_price: "$118",
           transmission: "Automatic",
@@ -127,7 +127,7 @@ export default {
           conditioner: "No"
         },
         {
-          img_name: "car-toyoda.png",
+          img_name: "car_toyoda.png",
           car_name: "Toyota Prius",
           day_price: "$118",
           transmission: "Manual",

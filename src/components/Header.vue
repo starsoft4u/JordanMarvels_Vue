@@ -41,7 +41,7 @@
           <hr />
           <a @click="add_new_user_dialog_visible=true">
             <div class="m-3">
-              <img class="m-3" src="../assets/images/ic-user-add.svg" width="28" height="28" />
+              <img class="m-3" src="../assets/images/ic_user_add.svg" width="28" height="28" />
               <span class="profile-name">Add New User</span>
             </div>
           </a>
@@ -49,7 +49,7 @@
           <hr />
           <a @click="logout">
             <div class="m-3">
-              <img class="m-3" src="../assets/images/ic-logout.svg" width="28" height="28" />
+              <img class="m-3" src="../assets/images/ic_logout.svg" width="28" height="28" />
               <span class="profile-name">Logout</span>
             </div>
           </a>
@@ -79,7 +79,7 @@
       <span slot="footer" class="dialog-footer">
         <el-button @click="addNewUser">
           <span>Add New User</span>
-          <img src="../assets/images/ic-user-add.svg" />
+          <img src="../assets/images/ic_user_add.svg" />
         </el-button>
         <el-button @click="add_new_user_dialog_visible = false">
           <span>Cancel</span>
@@ -127,7 +127,7 @@ export default {
     logout() {
       this.$confirm("Are you sure LOGOUT?")
         .then(() => {
-          localStorage.logged = false;
+          localStorage.jm_admin_logged = false;
           this.$router.replace({ name: "Login" });
         })
         .catch(() => {});

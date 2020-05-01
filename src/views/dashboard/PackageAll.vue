@@ -10,21 +10,21 @@
         <el-table-column label="View">
           <template>
             <el-button size="small">
-              <img src="../../assets/images/ic-eye.svg" @click="show_detail_dialog" />
+              <img src="../../assets/images/ic_eye.svg" @click="show_detail_dialog" />
             </el-button>
           </template>
         </el-table-column>
         <el-table-column label="Edit">
           <template>
             <el-button size="small">
-              <img src="../../assets/images/ic-edit-black.svg" />
+              <img src="../../assets/images/ic_edit_black.svg" />
             </el-button>
           </template>
         </el-table-column>
         <el-table-column label="Delete">
           <template>
             <el-button size="small">
-              <img src="../../assets/images/ic-user-delete.svg" />
+              <img src="../../assets/images/ic_user_delete.svg" />
             </el-button>
           </template>
         </el-table-column>
@@ -84,11 +84,11 @@
           <div class="mt-4">
             <el-button>
               <span>Edit Package</span>
-              <img src="../../assets/images/ic-user-edit.svg" />
+              <img src="../../assets/images/ic_user_edit.svg" />
             </el-button>
             <el-button @click="detail_dialog_visible = false">
               <span>Delect Package</span>
-              <img src="../../assets/images/ic-package-delete.svg" />
+              <img src="../../assets/images/ic_package_delete.svg" />
             </el-button>
           </div>
         </div>
